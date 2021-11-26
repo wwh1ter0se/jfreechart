@@ -274,9 +274,9 @@ public class KeyToGroupMap<K extends Comparable<K>, G extends Comparable<G>>
                 try {
                     result = m.invoke(object, (Object[]) null);
                 }
-                catch (Exception e) {
-                    e.printStackTrace();
-                }
+                catch(Exception e) {
+                e.printStackTrace(); // Sensitive
+            }
             }
         }
         catch (NoSuchMethodException e) {

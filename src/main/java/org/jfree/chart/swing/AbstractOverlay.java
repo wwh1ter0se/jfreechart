@@ -69,7 +69,6 @@ public class AbstractOverlay {
         Args.nullNotPermitted(listener, "listener");
         this.changeListeners.add(OverlayChangeListener.class, listener);
     }
-
     /**
      * Deregisters an object for notification of changes to the overlay.
      *
@@ -83,7 +82,7 @@ public class AbstractOverlay {
     }
 
     /**
-     * Sends a default {@link ChartChangeEvent} to all registered listeners.
+     * Sends a default {@link ChartChangeEvent} to all registered listenerss.
      * <P>
      * This method is for convenience only.
      */
